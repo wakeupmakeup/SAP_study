@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <div id="div1" data-first="Apple" data-second="Cherry" data-third="Banana">
+            <button id="button1" type="button">누르세요</button>
+            <span id="span1">누르면 나타납니다.</span> 
+            <!-- span 태그의 존재로써는 아무 의미가 없다. 단 속성이 나오면 된다. -->
+        </div>
+        <script>
+            // JS가 오면 된다.
+            var div = document.getElementById("div1");
+            var button = document.getElementById("button1");
+
+            // 클릭을 하면 그것을 인식하는 메소드는 addEventListener임
+            button.addEventListener(
+                "click",
+                function () {
+                    console.log("div");
+                },
+                false
+            );
+        </script>
+    </body>
+</html>

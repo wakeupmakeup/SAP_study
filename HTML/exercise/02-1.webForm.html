@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        </head>
+
+    <body>
+        <ol>
+            <li data-attr1="이름1" data-attr2="이름2">첫 번째 데이터</li>
+            <li id="il">두 번째 데이터</li>
+        </ol>
+        <script>
+            var user = document.getElementById("li");
+            user.addEventListener("click", function() {
+                console.log("li");
+            }, fasle);
+        </script>
+    </body>
+</html>
